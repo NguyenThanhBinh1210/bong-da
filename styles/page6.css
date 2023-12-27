@@ -1,0 +1,89 @@
+:root {
+  --background-main-button: green;
+  --background-main: #ffa400;
+}
+
+.cuoi0cung h2 {
+  color: white;
+  font-size: 28px;
+  font-weight: 500;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  letter-spacing: 2px;
+}
+
+.cuoi0cung p {
+  margin-bottom: 20px;
+  color: white;
+  font-size: 15px;
+  line-height: 18px;
+}
+/* HOT */
+.hot__list {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  gap: 17px;
+}
+.hot__item h3 {
+  font-size: 6px;
+}
+
+.hot__item p,
+.hot__item p {
+  font-size: 6px;
+}
+.hot__item button {
+  font-size: 6px;
+  padding: 2.5px;
+}
+
+.hot__item .item__name {
+  font-size: 6px;
+}
+
+.hot__item .left__item,
+.hot__item .right__item {
+  gap: 2px;
+}
+
+.hot__item img {
+  width: 30px;
+  height: 30px;
+}
+.hot__item {
+  position: relative;
+}
+.hot__item .live__chip {
+  position: absolute;
+  font-size: 7px;
+  top: 3px;
+  left: 3px;
+}
+.hot__item {
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.hot__item .hot__item__name {
+  position: absolute;
+  font-size: 7px;
+  top: 3px;
+  right: 3px;
+}
+
+@media (max-width: 1200px) {
+  .hot__list {
+    grid-template-columns: auto auto auto auto;
+  }
+}
+@media (max-width: 768px) {
+  .hot__list {
+    grid-template-columns: auto auto;
+  }
+  .hot__item {
+    padding: 20px 0;
+  }
+  .header__main img {
+    width: 90px;
+  }
+}
