@@ -1,0 +1,124 @@
+.info-card {
+    border-radius: 8px;
+    padding: 20px;
+    width: 400px;
+    color: #fdba12;
+}
+
+.info-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.info-item:last-child {
+    margin-bottom: 0;
+}
+
+.info-title {
+    color: #fdba12;
+    margin-left: 10px;
+}
+
+hr {
+    border: none;
+    /* Remove the default border */
+    height: 1px;
+    /* Set the height of the line */
+    background-color: #fdba12;
+    margin: 12px 0;
+    /* Line color */
+}
+
+p {
+    color: white
+}
+
+.body-page {
+    display: flex;
+}
+
+.content {
+    width: 600px;
+    margin: 30px 20px;
+}
+
+/*  */
+.competition-list {
+    background-color: #fdab11;
+    /* Adjust the color to match the list background of your image */
+    border-radius: 20px;
+    /* Adjust as needed */
+    padding: 20px 0;
+    width: 300px;
+    /* Adjust as needed */
+}
+
+.competition-header {
+    color: #fdba12;
+    text-transform: uppercase;
+    font-size: 20px;
+    /* Adjust as needed */
+    margin-bottom: 20px;
+    /* Adjust as needed */
+    text-align: center;
+}
+
+.competition-item {
+    color: #070707;
+    margin-bottom: 10px;
+    font-size: 18px;
+    /* Adjust as needed */
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    /* Placeholder for the icon styles */
+    margin-right: 8px;
+}
+
+/*  */
+.header {
+    color: #fdba12;
+    /* Adjust if the text color is different */
+    font-size: 36px;
+    /* Adjust if the text size is different */
+    font-weight: bold;
+    padding: 10px 20px;
+    /* Adjust padding to match the design */
+    border-radius: 5px;
+    /* Adjust if border radius is required */
+    /* Add text-shadow if it appears in your design */
+    text-align: center;
+
+    margin: 20px 0;
+}
+
+.icon {
+    width: 5px;
+    padding: 5px;
+}
+
+.text {
+    color: black;
+    margin-left: 20px;
+}
+
+.hr {
+    background-color: black
+}
+
+.lion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+.container-all{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}

@@ -1,0 +1,41 @@
+.scoreboard {
+    width: 90%;
+    margin: 20px auto;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .scoreboard-header {
+    background: #202d4a; /* Adjust the header background color as needed */
+    color: #fff;
+    padding: 10px;
+    text-align: left;
+    font-size: 20px; /* Adjust the font size as needed */
+  }
+  .match {
+    display: flex;
+    justify-content: space-between;
+    background: #262f4d; /* Adjust the match item background color as needed */
+    color: #fff;
+    padding: 10px;
+    border-bottom: 1px solid #202d4a; /* Adjust the border color as needed */
+  }
+  .match:last-child {
+    border-bottom: none;
+  }
+  .time, .team, .score {
+    display: flex;
+    align-items: center;
+  }
+  .team {
+    flex-grow: 1;
+  }
+  .badge {
+    width: 20px; /* Adjust the badge size as needed */
+    height: 20px; /* Adjust the badge size as needed */
+    margin-right: 5px;
+    background: #fff; /* Adjust the badge background color as needed */
+    border-radius: 50%;
+  }
+  .score {
+    font-weight: bold;
+  }
