@@ -1,9 +1,20 @@
 :root {
   --background-main-button: green;
   --background-main: #ffa400;
+  --background-red: #de3615;
 }
 
-/* SLIDE */
+.page2__title {
+  background: var(--background-main);
+  padding: 20px 320px;
+  font-size: 24px;
+  font-weight: 600;
+  margin: 30px auto;
+}
+.table__tiso {
+  margin-bottom: 30px;
+}
+
 .slide__list {
   display: flex;
   gap: 10px;
@@ -145,22 +156,6 @@
   transform: rotate(180deg);
 }
 
-.cuoi0cung h2 {
-  color: white;
-  font-size: 28px;
-  font-weight: 500;
-  margin-top: 40px;
-  margin-bottom: 40px;
-  letter-spacing: 2px;
-}
-
-.cuoi0cung p {
-  margin-bottom: 20px;
-  color: white;
-  font-size: 15px;
-  line-height: 18px;
-}
-
 /* Top NHA CAI */
 .top-nha-cai {
   margin-bottom: 30px;
@@ -235,89 +230,4 @@
   height: 30px;
   color: black;
   font-weight: 600;
-}
-
-.diff__list {
-  display: grid;
-  grid-template-columns: auto auto auto auto auto auto auto auto;
-  gap: 10px;
-}
-
-.diff__item {
-  border-radius: 4px;
-  background: var(--background-main);
-}
-
-.diff__item p:not(:first-child) {
-  font-size: 8px;
-  font-weight: 700;
-  text-align: center;
-  padding: 10px 0;
-}
-
-.diff__item img {
-  width: 30px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.diff_title {
-  text-align: center;
-  padding: 5px 0;
-  border-bottom: 1px solid black;
-  font-size: 14px;
-  font-weight: 600;
-}
-
-.hot__list {
-  display: grid;
-  grid-template-columns: auto auto auto auto auto auto;
-  gap: 17px;
-}
-.hot__item h3 {
-  font-size: 6px;
-}
-
-.hot__item p,
-.hot__item p {
-  font-size: 6px;
-}
-.hot__item button {
-  font-size: 6px;
-  padding: 2.5px;
-}
-
-.hot__item .item__name {
-  font-size: 6px;
-}
-
-.hot__item .left__item,
-.hot__item .right__item {
-  gap: 2px;
-}
-
-.hot__item img {
-  width: 30px;
-  height: 30px;
-}
-.hot__item {
-  position: relative;
-}
-.hot__item .live__chip {
-  position: absolute;
-  font-size: 7px;
-  top: 3px;
-  left: 3px;
-}
-.hot__item {
-  width: 100%;
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
-.hot__item .hot__item__name {
-  position: absolute;
-  font-size: 7px;
-  top: 3px;
-  right: 3px;
 }
