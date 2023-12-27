@@ -170,3 +170,126 @@
 .slide__list .prev__button svg {
   transform: rotate(180deg);
 }
+
+.cuoi0cung h2 {
+  color: white;
+  font-size: 28px;
+  font-weight: 500;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  letter-spacing: 2px;
+}
+
+.cuoi0cung p {
+  margin-bottom: 20px;
+  color: white;
+  font-size: 15px;
+  line-height: 18px;
+}
+.top-nha-cai {
+  margin-bottom: 30px;
+}
+.top__list {
+  display: flex;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.top__item {
+  border: 1px solid var(--background-main);
+  border-radius: 8px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  position: relative;
+  min-height: 120px;
+}
+
+.top__item__left,
+.top__item__mid,
+.top__item__right {
+  width: 33%;
+}
+.top__item__left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(255, 204, 0);
+  letter-spacing: 4px;
+  font-size: 20px;
+}
+.top__item__mid {
+  padding: 0 100px;
+  border-right: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  text-align: center;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.top__item__right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  font-weight: 600;
+}
+.top__item__right button:first-child {
+  color: var(--background-main);
+}
+.top__item__right button:last-child {
+  color: white;
+  background-color: var(--background-main);
+  padding: 8px 10px;
+  border-radius: 8px;
+}
+
+.top__item__stt {
+  position: absolute;
+  top: -15px;
+  left: 15px;
+  background-color: var(--background-main);
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  color: black;
+  font-weight: 600;
+}
+
+.diff__list {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto auto;
+  gap: 10px;
+}
+
+.diff__item {
+  border-radius: 4px;
+  background: var(--background-main);
+}
+
+.diff__item p:not(:first-child) {
+  font-size: 8px;
+  font-weight: 700;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.diff__item img {
+  width: 30px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.diff_title {
+  text-align: center;
+  padding: 5px 0;
+  border-bottom: 1px solid black;
+  font-size: 14px;
+  font-weight: 600;
+}
