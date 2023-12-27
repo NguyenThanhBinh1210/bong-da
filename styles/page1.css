@@ -70,3 +70,20 @@
   top: 3px;
   right: 3px;
 }
+
+@media (max-width: 1200px) {
+  .hot__list {
+    grid-template-columns: auto auto auto auto;
+  }
+}
+@media (max-width: 768px) {
+  .hot__list {
+    grid-template-columns: auto auto;
+  }
+  .hot__item {
+    padding: 20px 0;
+  }
+  .header__main img {
+    width: 90px;
+  }
+}

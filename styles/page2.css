@@ -14,3 +14,58 @@
 .table__tiso {
   margin-bottom: 30px;
 }
+.page2 {
+  padding: 20px;
+}
+.page2 h3 {
+  background: rgb(248, 47, 47);
+  font-size: 12px;
+  text-transform: capitalize;
+  padding: 5px 40px 6px;
+}
+.page2 .item__name {
+  bottom: 5px;
+  border-radius: 12px;
+  font-size: 12px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.page2 p {
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 4px;
+}
+.page2 .live__time {
+  font-size: 14px;
+  font-weight: 600;
+}
+.page2 .live__tiso {
+  gap: 20px;
+  font-size: 65px;
+  justify-content: center;
+}
+.page2 img {
+  width: 100px;
+  height: 100px;
+}
+@media (max-width: 1200px) {
+  .page2__title {
+    padding: 20px 100px;
+  }
+}
+@media (max-width: 768px) {
+  .page2__title {
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .page2 img {
+    width: 80px;
+    height: 80px;
+  }
+  .page2 .live__tiso {
+    gap: 20px;
+    font-size: 44px;
+    justify-content: center;
+  }
+}
