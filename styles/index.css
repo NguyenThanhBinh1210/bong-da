@@ -1,0 +1,99 @@
+:root {
+  --background-main-button: green;
+  --background-main: #ffa400;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  font-family: "Poppins", sans-serif;
+}
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+input,
+select,
+textarea {
+  background-color: transparent;
+  outline: none;
+}
+button {
+  cursor: pointer;
+  background-color: transparent;
+  outline: none;
+  border: 0;
+}
+body {
+  min-height: 100vh;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1;
+  background-color: black;
+}
+
+/* HEADER */
+
+header {
+  background-color: var(--background-main);
+  padding: 5px 10px;
+}
+.header__main {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5px;
+}
+
+.header__main ul.list__nav {
+  display: flex;
+  list-style: none;
+  font-size: 14px;
+  font-weight: 500;
+  gap: 20px;
+}
+
+.contact__button__list {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.contact__button__header {
+  background-color: var(--background-main-button);
+  color: white;
+  font-size: 14px;
+  padding: 4px 30px;
+  border-radius: 100rem;
+}
+.contact__button__header p:first-child {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.contact__button__header p:last-child {
+  font-size: 10px;
+}
+
+.link__button__list {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.link__button__list button {
+  color: var(--background-main);
+  background: black;
+  border-radius: 4px;
+  padding: 10px 5px;
+  font-size: 12px;
+  text-transform: uppercase;
+  font: 500;
+}

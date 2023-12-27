@@ -1,0 +1,178 @@
+:root {
+  --background-main-button: green;
+  --background-main: #ffa400;
+}
+
+.container {
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title__view-all {
+  display: flex;
+  align-items: flex-start;
+  gap: 2px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.title__view-all h2 {
+  color: var(--background-main);
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.title__view-all a {
+  text-decoration: none;
+  color: white;
+  font-size: 10px;
+  margin-top: 2px;
+  font-weight: 500;
+}
+
+/* SLIDE */
+.slide__list {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  position: relative;
+}
+.title__view-all svg {
+  width: 10px;
+  height: 10px;
+  color: white;
+  margin-top: 2px;
+}
+.slide__item {
+  color: white;
+  width: 19%;
+  box-shadow: rgba(255, 196, 1, 0.913) 0px 0px 6px;
+  position: relative;
+  padding: 10px;
+  border-radius: 8px;
+  background-image: url("https://c8.alamy.com/comp/2PB9J16/grounds-crew-member-chantry-marble-places-a-sprinkler-pipe-in-front-of-banner-showing-real-salt-lake-midfielder-freddy-adu-prior-to-the-mls-soccer-game-against-the-new-england-revolution-on-saturday-july-28-2007-in-salt-lake-city-adu-is-leaving-real-salt-lake-to-complete-transfer-deal-negotiations-with-the-portuguese-club-benfica-a-spokesman-for-the-utah-club-said-adu-flew-to-his-parents-home-in-washington-dc-saturday-afternoon-before-leaving-for-lisbon-on-sunday-ap-photodouglas-c-pizac-2PB9J16.jpg");
+  background-repeat: no-repeat;
+  background-color: #ffa400;
+  background-size: cover;
+}
+
+.slide__item .item__name {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--background-main-button);
+  font-size: 8px;
+  padding: 3px 10px;
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+}
+.slide__item h3 {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--background-main-button);
+  font-size: 8px;
+  padding: 3px 10px;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  text-transform: uppercase;
+}
+
+.slide__item__main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.slide__item__main img {
+  width: 56px;
+  height: 56px;
+}
+
+.slide__item__main p {
+  background-color: var(--background-main-button);
+  font-size: 10px;
+  border-radius: 1000px;
+  text-transform: uppercase;
+  width: max-content;
+  padding: 2px 5px;
+}
+
+.slide__item__main .left__item,
+.slide__item__main .right__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+.slide__item__main button {
+  background-color: var(--background-main);
+  color: black;
+  font-size: 7px;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 3px;
+  border-radius: 4px;
+}
+
+.mid__item {
+  text-align: center;
+  font-size: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 30%;
+}
+.mid__item .live__chip {
+  background: red;
+  width: max-content;
+  border-radius: 100rem;
+  padding: 2px 6px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.mid__item .live__tiso {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 35px;
+  font-weight: 600;
+  width: 100%;
+}
+
+.left__item,
+.right__item {
+  width: 30%;
+}
+.live__time {
+  font-size: 7px;
+}
+
+.slide__list .prev__button,
+.slide__list .next__button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: var(--background-main);
+  padding: 10px 5px;
+}
+.slide__list .prev__button svg,
+.slide__list .next__button svg {
+  color: var(--background-main-button);
+  width: 25px;
+  height: 25px;
+}
+
+.slide__list .next__button {
+  right: -20px;
+}
+.slide__list .prev__button {
+  left: -20px;
+}
+.slide__list .prev__button svg {
+  transform: rotate(180deg);
+}
