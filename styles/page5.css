@@ -114,6 +114,12 @@ table {
     text-align: center;
     align-items: center;
   }
+  .search-container{
+    width: 100%;
+  }
+  .search-container input{
+    width: 70%;
+  }
   .team-logo {
     width: 24px;
     /* Adjust as needed */
@@ -133,6 +139,7 @@ table {
   .outcome {
     width: 24px;
     height: 26px;
+    padding: 2px;
   }
 
   .win {
