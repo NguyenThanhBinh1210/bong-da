@@ -115,6 +115,9 @@ table {
     align-items: center;
   }
   .search-container{
+    width: 100%;
+  }
+  .search-container input{
     width: 70%;
   }
   .team-logo {
