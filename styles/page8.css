@@ -1,41 +1,114 @@
+.scoreboard-header {
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
 .scoreboard {
-    width: 90%;
-    margin: 20px auto;
-    border-radius: 10px;
-    overflow: hidden;
-  }
-  .scoreboard-header {
-    background: #202d4a; /* Adjust the header background color as needed */
-    color: #fff;
-    padding: 10px;
-    text-align: left;
-    font-size: 20px; /* Adjust the font size as needed */
-  }
-  .match {
-    display: flex;
-    justify-content: space-between;
-    background: #262f4d; /* Adjust the match item background color as needed */
-    color: #fff;
-    padding: 10px;
-    border-bottom: 1px solid #202d4a; /* Adjust the border color as needed */
-  }
-  .match:last-child {
-    border-bottom: none;
-  }
-  .time, .team, .score {
-    display: flex;
-    align-items: center;
-  }
-  .team {
-    flex-grow: 1;
-  }
-  .badge {
-    width: 20px; /* Adjust the badge size as needed */
-    height: 20px; /* Adjust the badge size as needed */
-    margin-right: 5px;
-    background: #fff; /* Adjust the badge background color as needed */
-    border-radius: 50%;
-  }
-  .score {
-    font-weight: bold;
-  }
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.scoreboard th,
+.scoreboard td {
+  padding: 10px;
+
+  /* border: 1px solid #fff; */
+}
+
+.scoreboard th {
+  background-color: #14436e; 
+}
+
+.scoreboard td {
+  background-color: #003366;
+}
+
+.time {
+  color: rgb(240, 240, 239);
+  width: 2%;
+  /* Assuming time is in yellow */
+}
+
+.minutes {
+  width: 2%;
+}
+
+.team {
+  width: 30%;
+}
+
+.left {
+  text-align: right
+}
+
+.right {
+  text-align: left
+}
+
+.team,
+.score {
+  color: white;
+  /* width: 10%; */
+}
+
+.win {
+  color: rgb(242, 242, 242);
+  /* Assuming green for win */
+}
+
+.draw {
+  color: red;
+  /* Assuming red for draw */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 10px;
+  text-align: center;
+  border: none; /* No borders for cells */
+}
+tr {
+  border-bottom: 1px solid #333; /* Only bottom border for rows */
+}
+tr:last-child {
+  border-bottom: none; /* No bottom border for the last row */
+}
+.body-page{
+ border-radius: 10px;
+ border: 1px solid #f3f3f3;
+ color: #003366;
+
+}
+.header-score{
+  display:  flex;
+  justify-content:space-between;
+  margin: 10px 0
+}
+.match{
+  color: white
+}
+
+.result{
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.all{
+  background-color: #0b2d39;
+  padding: 10px;
+  border-radius:10px
+}
+.header{
+  color: white;
+  text-align: center;
+  font-size:xx-large;
+  margin: 10px 0;
+}
