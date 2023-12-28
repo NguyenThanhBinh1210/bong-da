@@ -1,0 +1,215 @@
+:root {
+  --background-main-button: green;
+  --background-main: #fdab11;
+}
+.page9__title {
+  color: var(--background-main);
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 600;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.table__tilekeo {
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid white;
+}
+
+.input-wrapper {
+  --mw: 550px;
+  --py: 7px;
+  --px: 10px;
+  --radius: 4px;
+  --border: 1px solid black;
+  --focus: #6a5af9;
+  width: 100%;
+  max-width: var(--mw);
+  position: relative;
+  font-size: 12px;
+}
+.input-wrapper .input {
+  width: 100%;
+  padding: var(--py) calc(var(--px) * 2.5) var(--py) var(--px);
+  border-radius: var(--radius);
+  border: var(--border);
+  outline: none;
+  background-color: transparent;
+  font-family: inherit;
+  font-size: 14px;
+  transition: all 0.2s linear;
+  line-height: 1;
+}
+.input-wrapper .icon img {
+  display: inline-block;
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+}
+.input-wrapper .icon {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: var(--px);
+}
+
+.filter__select {
+  margin-right: 5px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  border: 1px solid black;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 10px 15px;
+}
+.filter__select svg {
+  width: 10px;
+  height: 10px;
+}
+
+.list__button {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.button__item {
+  background-color: rgb(72, 72, 72);
+  color: white;
+  text-transform: uppercase;
+  font-size: 12px;
+  padding: 8px 10px;
+  border-right: 3px solid black;
+  border-bottom: 3px solid black;
+  cursor: pointer;
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.button__item .dot {
+  width: 5px;
+  height: 5px;
+  background: red;
+  border-radius: 100rem;
+}
+table,
+td,
+th {
+  border: 1px solid;
+  padding: 4px;
+}
+
+table {
+  margin-top: 5px;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table__header {
+  background: #6186b7;
+  color: white;
+  font-size: 13px;
+}
+.table__header th {
+  padding: 10px 0;
+}
+
+.table__truc-tuyen,
+.table__title {
+  background: #3d679e;
+  color: white;
+  font-size: 16px;
+}
+
+.table__truc-tuyen th {
+  padding: 7px 8px;
+  text-align: left;
+}
+.table__title th {
+  padding: 4px 8px;
+  text-align: left;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.table__name p {
+  text-align: left;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 14px;
+}
+.table__name p:last-child {
+  color: gray;
+}
+
+.bg-red-300 {
+  background-color: rgb(249, 228, 228);
+}
+.bg-red-300 th {
+  border: 2px solid white;
+}
+.bg-red-400 th {
+  border: 2px solid white;
+}
+.bg-red-400 {
+  background-color: rgb(249, 212, 212);
+}
+
+.tile__child {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  font-weight: 600;
+  height: 100%;
+  width: 100%;
+  color: rgb(59, 59, 59);
+  text-align: right;
+}
+
+.tile__child .left {
+  color: rgb(155, 33, 33);
+  display: flex;
+  flex-direction: column;
+}
+
+.truc0tiep {
+  color: red;
+  font-weight: bold;
+  font-size: 8px;
+  margin-top: 7px;
+  margin-bottom: 4px;
+}
+.truc0tiep.to {
+  font-size: 14px;
+  margin-left: 10px;
+}
+.truc0tiep p {
+  font-style: italic;
+}
+.xem-truc-tiep {
+  margin-left: 6px;
+  font-weight: bold;
+  font-size: 14px;
+  font-style: italic;
+  color: rgb(91, 91, 91);
+}
+
+.table__wrap {
+  overflow: auto;
+  max-height: 600px;
+}
+
+@media (max-width: 768px) {
+  .input-wrapper {
+    width: 300px;
+  }
+  .list__button {
+    flex-wrap: wrap;
+  }
+}

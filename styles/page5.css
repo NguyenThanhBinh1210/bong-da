@@ -1,67 +1,103 @@
 .header {
-    align-items: center;
-    padding: 10px;
-    background-color: #eee;
-    width: 100%;
-  }
-  .header-child{
-    display: flex;
-    justify-content:space-between ;
-  }
-  .header h1 {
-    margin: 0;
-    color: purple;
-  }
-  table{
-    border-radius: 50%;
-    padding-bottom: 20px;
-  }
+  align-items: center;
+  padding: 10px;
+  background-color: #eee;
+  width: 100%;
+}
+
+.header-child {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header h1 {
+  margin: 0;
+  color: purple;
+}
+
+table {
+  border-radius: 50%;
+  padding-bottom: 20px;
+}
+
+.table {
+  width: 100%;
+  /* Full width of the container */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin: 20px 0;
+}
+
+.table-child {
+  width: 80%;
+  background: #f2f2f2;
+  border-radius: 20px;
+  padding: 10px;
+  padding-bottom: 50px;
+}
+
+.first-column {
+  width: 5%;
+  /* This will make the first column wider */
+}
+
+.second-column {
+  width: 50%;
+  /* This will make the last column narrower */
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tab {
+  padding: 5px 10px;
+  margin: 0 5px;
+  background-color: #f2f2f2;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.tab.active {
+  background-color: green;
+  color: white;
+}
+
+@media (max-width: 768px) {
   .table {
-    width: 100%; /* Full width of the container */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    margin: 20px 0;
+    width: 370px;
+    padding-top: 10px;
+    margin: auto;
   }
-  .table-child{
-    width: 80%;
+
+  .table-child {
+    width: 100%;
     background: #f2f2f2;
     border-radius: 20px;
     padding: 10px;
-    padding-bottom:50px;
+    padding-bottom: 50px;
   }
-  .first-column {
-    width: 5%; /* This will make the first column wider */
+
+  .table-child.tab {
+    width: 150px;
   }
-  .second-column {
-    width: 50%; /* This will make the last column narrower */
+
+  .table-child.league-table {
+    width: 100%;
   }
-  .tabs {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .tab {
-    padding: 5px 10px;
-    margin: 0 5px;
-    background-color: #f2f2f2;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .tab.active {
-    background-color: green;
-    color: white;
-  }
+
   .league-table {
     width: 100%;
     border-collapse: collapse;
   }
 
-  .league-table th, .league-table td {
+  .league-table th,
+  .league-table td {
     border: 1px solid #ddd;
     text-align: left;
     padding: 8px;
@@ -72,52 +108,127 @@
   .league-table th {
     background-color: #f2f2f2;
   }
-
+  .second-column {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+  }
+  .search-container{
+    width: 100%;
+  }
+  .search-container input{
+    width: 70%;
+  }
   .team-logo {
-    width: 24px; /* Adjust as needed */
-    height: 24px; /* Adjust as needed */
+    width: 24px;
+    /* Adjust as needed */
+    height: 24px;
+    /* float: left; */
+    /* Adjust as needed */
     vertical-align: middle;
+    margin: auto;
     margin-right: 10px;
+    text-align: center;
   }
 
   .match-outcome {
-    display: inline-block;
-    width: 16px; /* Adjust as needed */
-    height: 16px; /* Adjust as needed */
-    margin-left: 5px;
-    border-radius: 50%;
+    width: 10px;
   }
 
   .outcome {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px; /* Adjust as needed */
-    height: 40px; /* Adjust as needed */
-    border-radius: 20%;
-    color: white;
-    font-family: Arial, sans-serif;
-    font-size: 14px; /* Adjust as needed */
-    margin: 0 2px;
+    width: 24px;
+    height: 26px;
+    padding: 2px;
   }
-  
+
   .win {
     background-color: green;
   }
-  
+
   .draw {
     background-color: rgba(255, 255, 0, 0.627);
   }
-  
+
   .lose {
     background-color: red;
   }
-  
-  /* Ad
-  /* Rest of the CSS */
-  hr {
-    border: none; /* Remove the default border */
-    height: 2px; /* Set the height of the line */
-    background-color: #333; /* Line color */
+}
 
-  }
+.league-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.league-table th,
+.league-table td {
+  border: 1px solid #ddd;
+  text-align: left;
+  padding: 8px;
+  background-color: #f2f2f2;
+
+}
+
+.league-table th {
+  background-color: #f2f2f2;
+}
+
+.team-logo {
+  width: 24px;
+  /* Adjust as needed */
+  height: 24px;
+  float: left;
+  /* Adjust as needed */
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.match-outcome {
+  display: inline-block;
+  width: 16px;
+  /* Adjust as needed */
+  height: 16px;
+  /* Adjust as needed */
+  margin-left: 5px;
+  border-radius: 50%;
+}
+
+.outcome {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  /* Adjust as needed */
+  height: 24px;
+  /* Adjust as needed */
+  border-radius: 20%;
+  color: white;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  /* Adjust as needed */
+  margin: 0 2px;
+}
+
+.win {
+  background-color: green;
+}
+
+.draw {
+  background-color: rgba(255, 255, 0, 0.627);
+}
+
+.lose {
+  background-color: red;
+}
+
+/* Ad
+  /* Rest of the CSS */
+hr {
+  border: none;
+  /* Remove the default border */
+  height: 2px;
+  /* Set the height of the line */
+  background-color: #333;
+  /* Line color */
+
+}
