@@ -58,10 +58,14 @@ header {
   display: flex;
   list-style: none;
   font-size: 12px;
+  cursor: pointer;
   font-weight: 600;
   gap: 20px;
 }
-
+.header__main ul.list__nav a{
+  text-decoration: none;
+  color: black;
+}
 .header__main img {
   width: 120px;
 }
@@ -442,6 +446,10 @@ footer {
   }
   .header__main ul.list__nav {
     display: none;
+    cursor: pointer;
+  }
+  .header__main ul.list__nav a{
+    text-decoration: none;
   }
   .link__button__list {
     display: none;
